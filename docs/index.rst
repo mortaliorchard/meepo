@@ -96,8 +96,8 @@ Then you can connect to the signal and do tasks based the signal:
     sg = signal("test_write")
 
     @sg.connect
-    def print_test_write(pk)
-        print("test_write -> %s" % pk)
+    def print_test_write(primary_key):
+        print("test_write -> %s" % primary_key)
 
 Try out the demo scripts in ``example/tutorial`` for more about how meepo
 event works.
